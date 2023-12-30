@@ -1,0 +1,161 @@
+/* General Styles */
+
+.App {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+.autocomplete-wrapper {
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #ced4da;
+  border-radius: 15px;
+  background: #fff;
+}
+
+/* Input and Tags */
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  border: none;
+}
+
+.selected-characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.selected-tag {
+  background-color: #e9ecef;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.selected-tag .remove-tag {
+  display: inline-block;
+  margin-left: 8px;
+  color: #adb5bd;
+  cursor: pointer;
+}
+
+.remove-tag {
+  background-color: #ced4da;
+  padding: 2px 5px;
+  border-radius: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Autocomplete Dropdown */
+.autocomplete-results {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: white;
+  border: 1px solid #ced4da;
+
+  border-radius: 15px;
+  max-height: 500px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 10px;
+}
+.autocomplete-input {
+  flex-grow: 1;
+  border: none;
+  padding: 8px;
+  outline: none;
+  font-size: 16px;
+  margin: 2px 0;
+  border-radius: 15px;
+}
+
+/* Scrollbar */
+.autocomplete-results::-webkit-scrollbar {
+  width: 22px;
+}
+
+.autocomplete-results::-webkit-scrollbar-track {
+  background: #f1f3f5;
+  border-radius: 20px;
+  margin: 1px;
+  border-bottom-left-radius: none;
+  border-top-left-radius: none;
+}
+
+.autocomplete-results::-webkit-scrollbar-thumb {
+  background-color: #adb5bd;
+  border-radius: 20px;
+
+  border: 7px solid #f1f3f5;
+}
+
+/* Search Results Items */
+.result-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item:hover,
+.result-item:focus,
+.result-item.hovered,
+.result-item.focused {
+  background-color: #f0f0f0; /* İstenilen arka plan rengini tanımlayın */
+}
+
+/* Checkbox Styles */
+.character-checkbox {
+  margin-right: 15px;
+}
+
+/* Character Image */
+.result-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+/* Character Info */
+.character-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.character-episodes {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Highlighted Search Text */
+.highlight-text {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Rick Image */
+.rick {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
