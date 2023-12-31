@@ -180,7 +180,7 @@ const MultiSelectAutocomplete: React.FC = () => {
    * @param {number} id - Kontrol edilecek karakterin kimliği.
    * @returns {boolean} - Karakter seçiliyse true, değilse false.
    */
-  const isCharacterSelected = (id: number) => {
+  const isCharacterSelected = (id: number): boolean => {
     return selectedCharacters.some((character) => character.id === id);
   };
 
